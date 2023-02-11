@@ -1,0 +1,1 @@
+export const API_URL = 'http://13.214.194.163:5400/api/v1'
