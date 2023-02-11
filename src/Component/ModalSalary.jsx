@@ -85,8 +85,8 @@ const ModalSalary = ({setOpenModal,setFetchStatus}) => {
     };
 
     return (
-        <div className="fixed inset-x-[440px] inset-y-5 ">
-        <div className='h-[670px] w-[830px] shadow-lg rounded-lg bg-white'>
+        <div className="fixed md:inset-x-[440px] inset-y-2 z-50 ">
+        <div className='h-[670px] w-96 shadow-lg rounded-lg bg-white'>
             <div className='h-[70px] border-b-2 border-slate-300 px-10'>
                 <div className='pt-5 flex justify-between'>
                     <p className='text-xl font-bold'>Add Position</p>
@@ -95,13 +95,13 @@ const ModalSalary = ({setOpenModal,setFetchStatus}) => {
             </div>
             <div className='h-[500px] border-b-2 border-slate-300 px-10 py-5'>
                 <p className='font-bold' >Salary</p>
-                <input className='h-[40px] w-[759px] border border-slate-300 my-2'  placeholder='add salary' onChange={onChange} name='basic_sallary'/>
+                <input className='h-[40px] w-full border border-slate-300 my-2'  placeholder='add salary' onChange={onChange} name='basic_sallary'/>
                 <p className='font-bold'>Allowance</p>
-                <input className='h-[40px] w-[759px] border border-slate-300 my-2'  placeholder='add allowance' onChange={onChange} name='allowance'/>
+                <input className='h-[40px] w-full border border-slate-300 my-2'  placeholder='add allowance' onChange={onChange} name='allowance'/>
                 <p className='font-bold'>Payday</p>
-                <input className='h-[40px] w-[759px] border border-slate-300 my-2'  placeholder='add payday' type='date' onChange={onChange} name='payday'/>
+                <input className='h-[40px] w-full border border-slate-300 my-2'  placeholder='add payday' type='date' onChange={onChange} name='payday'/>
                 <p className='font-bold'>Notes</p>
-                <input className='h-[40px] w-[759px] border border-slate-300 my-2'  placeholder='add notes' onChange={onChange} name='notes'/>
+                <input className='h-[40px] w-full border border-slate-300 my-2'  placeholder='add notes' onChange={onChange} name='notes'/>
                 <p className='font-bold'>Select Employee</p>
                 <select onChange={onChange} className='bg-white border h-[40px] my-2' name='employee_id'>
                     <option>Select</option>

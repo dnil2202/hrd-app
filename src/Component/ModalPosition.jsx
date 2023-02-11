@@ -33,8 +33,8 @@ const ModalInput = ({setOpenModal,setFetchStatus}) => {
 
 
   return (
-    <div className="fixed inset-x-96 inset-y-40 ">
-    <div className='h-[440px] w-[830px] shadow-lg rounded-lg bg-white'>
+    <div className="fixed md:inset-x-[440px] inset-y-2 z-50 ">
+    <div className='h-[440px] w-96 shadow-lg rounded-lg bg-white'>
         <div className='h-[70px] border-b-2 border-slate-300 px-10'>
             <div className='pt-5 flex justify-between'>
                 <p className='text-xl font-bold'>Add Position</p>
@@ -43,9 +43,9 @@ const ModalInput = ({setOpenModal,setFetchStatus}) => {
         </div>
         <div className='h-[268px] border-b-2 border-slate-300 px-10 py-5'>
             <p className='font-bold' >Code</p>
-            <input className='h-[52px] w-[80px] border border-slate-300 my-2' onChange={(e)=>setCode(e.target.value)} type='number'  placeholder='add code'/>
+            <input className='h-[52px] border border-slate-300 my-2' onChange={(e)=>setCode(e.target.value)} type='number'  placeholder='add code'/>
             <p className='font-bold'>Name</p>
-            <input className='h-[52px] w-[759px] border border-slate-300 my-2' onChange={(e)=>setName(e.target.value)} placeholder='add name'/>
+            <input className='h-[52px] border border-slate-300 my-2' onChange={(e)=>setName(e.target.value)} placeholder='add name'/>
 
         </div>
         <div className='flex justify-end px-10'>

@@ -91,9 +91,7 @@ const Employee = () => {
           <tbody>
             {printDataEmployee()}
           </tbody>
-
         </table>
-
       </div>
       <div>
         {printTooglePage()}
